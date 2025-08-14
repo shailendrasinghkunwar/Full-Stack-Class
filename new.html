@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
 </head>
 <body>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28285.07629831472!2d77.57952690124515!3d27.60485793725278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755053931506!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6_ctPuqqr7c?si=ZIBUECApg12Z2F9j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
- <audio controls loop >
-    <source src="1.mp3" type="audio/mpeg"> 
- </audio> 
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, iusto!</p>
- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ex, quo quam reiciendis omnis aperiam atque nam, dignissimos voluptate incidunt ratione perspiciatis! Delectus cumque ut magni, aut vitae repellat error excepturi eius dicta obcaecati ad quos magnam inventore beatae aperiam debitis. Fugiat ipsa corrupti dolorum!</p>
- 
-</body>
 
+  <!-- 🌐 Navbar -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#map">Map</a>
+    <a href="#video">Video</a>
+    <a href="#audio">Audio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="new.html">New Page</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>        
+  <a href="index.html">Index Page</a>
+  </div>
+  
+     <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Select Country--</option>
+      <option value="India">India</option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Japan">Japan</option>
+      <option value="China">China</option>
+    </select><br><br><br> 
+
+  <!-- 📌 Content -->
+  <div class="content">
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28285.07629831472!2d77.57952690124515!3d27.60485793725278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755053931506!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/6_ctPuqqr7c?si=ZIBUECApg12Z2F9j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <audio id="audio" controls loop>
+      <source src="1.mp3" type="audio/mpeg">
+    </audio>
+
+    <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, iusto!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex, quo quam reiciendis omnis aperiam atque nam, dignissimos voluptate incidunt ratione perspiciatis!</p>
+
+    <!-- 📬 Contact Form -->
+    <div id="contact" class="contact-form">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
 </html>
