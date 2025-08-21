@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="application style.css">
+</head>
+<body>
+
+  <h2>Job Application Form</h2>
+
+  <form action="mailto:your@email.com" method="post" enctype="text/plain">
+    
+    <label>Full Name:</label><br>
+    <input type="text" name="Full Name" required><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="Email" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="Phone" required><br><br>
+
+   
+
+    <!-- 🔽 Job Details Section -->
+    <h2>Job Details</h2>
+
+     <label>Position Applying For:</label><br>
+    <select name="Position">
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+      <option value="Manager">Manager</option>
+    </select><br><br>
+ 
+    <label></label>Years of Experience</label><br>
+    <input type="number" name="Experience" min="0"><br><br>
+
+    <label>Cover Letter:</label><br>
+    <textarea name="Cover Letter" rows="5" cols="40"></textarea><br><br>
+
+    <h2>Availability</h2>
+
+    <label>Available Start Date:</label><br>
+    <input type="date" name="Start Date"><br><br>
+
+    <label>Willing to Join:</label><br>
+<select name="Willing to Join">
+  <option value="YES">YES</option>
+  <option value="NO">NO</option>
+</select><br><br>
+
+    <input type="submit" value="Submit Application">
+
+  </form>
+  
+
+</body>
+</html>
